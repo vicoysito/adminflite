@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app/app.component';
 import { RouteRoutingModule, routingComponents } from './route/route-routing.module';
+import { SecureModuleService } from './secure-module.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { RouteRoutingModule, routingComponents } from './route/route-routing.mod
   imports: [
     BrowserModule,RouteRoutingModule
   ],
-  providers: [],
+  providers: [SecureModuleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
